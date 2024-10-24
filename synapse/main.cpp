@@ -18,7 +18,7 @@ bool acquire_device()
     {
         return false;
     }
-
+    printf("Device Number :%d\n", dev_counter);
     uint32_t deviceID[dev_counter];
 
     for (uint32_t i = 0; i < dev_counter; i++)
