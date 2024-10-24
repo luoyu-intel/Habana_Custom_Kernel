@@ -64,5 +64,6 @@ string(TOUPPER ${SYNAPSE_PATH} SYNAPSE_PATH)
 
 
 add_subdirectory(src)  # build production
+add_subdirectory(synapse)  # build production
 add_subdirectory(tests) # unit test for kernels
 
