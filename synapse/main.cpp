@@ -24,6 +24,7 @@ bool acquire_device()
     for (uint32_t i = 0; i < dev_counter; i++)
     {
         status = synDeviceAcquire(&deviceID[i], nullptr);
+        printf("Deivce %d %d\n", i, deviceID[i]);
         if (status != synSuccess)
         {
             cout << "Failed to Acquire device: " << int(i) << endl;
